@@ -36,4 +36,6 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
 
     api 'com.squareup.picasso:picasso:2.71828'
+    implementation files("libs/libraryb-release.aar")
+
 }

@@ -4,6 +4,7 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import android.view.Menu
 import android.view.MenuItem
+import android.widget.Toast
 import com.comtrade.picasolib.PicassoLib
 
 import kotlinx.android.synthetic.main.activity_main.*
@@ -18,6 +19,7 @@ class MainActivity : AppCompatActivity() {
 
         fab.setOnClickListener { view ->
             PicassoLib.load("https://live.staticflickr.com/7151/6760135001_58b1c5c5f0_b.jpg", image)
+            Toast.makeText(this,"TEXT:"  + PicassoLib.helloFromLibB(), Toast.LENGTH_SHORT).show()
         }
     }
 
